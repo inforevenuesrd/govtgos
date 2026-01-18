@@ -1,0 +1,70 @@
+
+/* Header (Now Adjusted) */
+body {
+    font-size: 14px;
+}
+.header {
+    width: 100%; /* Adjusts width after sidebar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2C3E50;
+    color: white;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+    left: 0; /* Push header after sidebar */
+    height: 60px;
+    z-index: 1000;
+}
+
+.container {
+    margin: 100px 0px 0px 0px;
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.dataTables_scroll {
+    overflow-x: auto; /* To handle overflow */
+}
+
+.dataTables_scroll table {
+    width: 100%;
+}
+
+#userDropdown {
+    color: #fff;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .table-responsive {
+        padding: 10px;
+    }
+    .table {
+        font-size: 12px;  /* Smaller font size for better mobile view */
+    }
+    .card {
+        width: 100%; /* Make the card take full width on mobile */
+    }
+    .form-control {
+        font-size: 12px;  /* Smaller font size for inputs */
+    }
+}
+
+      @media (min-width: 1400px) {
+        .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+          max-width: 1515px !important;
+        }
+      }
+
